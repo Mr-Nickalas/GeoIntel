@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "GeoIntel",
+    "slug": "geointel",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0a0d14",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.geointel.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "GeoIntel needs your location to scan the surrounding area and provide satellite intelligence reports.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "GeoIntel needs your location to scan the surrounding area and provide satellite intelligence reports."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0d14"
+      },
+      "package": "com.geointel.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "GeoIntel needs your location to scan the surrounding area and provide satellite intelligence reports."
+        }
+      ]
+    ]
+  }
+}
